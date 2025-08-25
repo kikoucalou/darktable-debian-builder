@@ -1,0 +1,20 @@
+# Fichiers générés par le script
+*.deb
+*.log
+
+# Dossiers temporaires
+/tmp/
+/build/
+/darktable/
+darktable-*/
+
+# Fichiers de build
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Éditeurs
+*.swp
+*.swo
+.DS_Store

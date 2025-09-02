@@ -248,7 +248,7 @@ rm -rf "$BUILD_ROOT"
 # --- Vérification lintian ---
 if command -v lintian >/dev/null; then
   log "=== Vérification avec lintian ==="
-  lintian --verbose --no-tag-display-limit *.deb || log_warning "Lintian : avertissements présents (normaux pour un build custom)"
+  lintian --verbose --tag-display-limit 0 *.deb || log_warning "Lintian : avertissements présents (normaux pour un build custom)"
 fi
 
 # --- Résumé final ---
